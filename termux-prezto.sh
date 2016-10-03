@@ -14,7 +14,7 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$H
 clear
 
 #Install Prezto sim links
-ln -s $HONE/.zpresto/runcoms/zlogin  $HOME/.zlongin
+ln -s $HONE/.zpresto/runcoms/zlogin  $HOME/.zlogin
 ln -s $HOME/.zprezto/runcoms/zlogout $HOME/.zlogout
 ln -s $HOME/.zprezto/runcoms/zpreztorc $HOME/.zpreztorc
 ln -s $HOME/.zprezto/runcoms/zshenv $HOME/.zshenv
@@ -25,7 +25,7 @@ chsh -s zsh
 
 #Backup termux config
 if [ -d "$HOME/.termux"]; then
-  mv $HOME/.termux $HOME/termux.bak
+  mv $HOME/.termux $HOME/.termux.bak
 fi
 
 #Clone Termux-Prezto project
