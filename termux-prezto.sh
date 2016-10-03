@@ -14,7 +14,7 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$H
 clear
 
 #Install Prezto sim links
-ln -s $HONE/.zpresto/runcoms/zlogin  $HOME/.zlogin
+ln -s $HOME/.zpresto/runcoms/zlogin  $HOME/.zlogin
 ln -s $HOME/.zprezto/runcoms/zlogout $HOME/.zlogout
 ln -s $HOME/.zprezto/runcoms/zpreztorc $HOME/.zpreztorc
 ln -s $HOME/.zprezto/runcoms/zshenv $HOME/.zshenv
