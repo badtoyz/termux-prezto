@@ -10,8 +10,8 @@ apt update
 apt install -y git zsh
 
 #Clone Preszto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-clear
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.zprezto"
+#clear
 
 #Install Prezto sim links
 ln -s $HOME/.zpresto/runcoms/zlogin  $HOME/.zlogin
@@ -29,8 +29,8 @@ if [ -d "$HOME/.termux"]; then
 fi
 
 #Clone Termux-Prezto project
-git clone https:github.com/badtoyz/termux-prezto $HOME/.termux-prezto
-clear
+git clone https://github.com/badtoyz/termux-prezto "$HOME/.termux"
+#clear
 
 #Install Color and Font
 cp $HOME/.termux-prezto/colors.properties $HOME/.termux
