@@ -20,9 +20,6 @@ ln -s $HOME/.zprezto/runcoms/zpreztorc $HOME/.zpreztorc
 ln -s $HOME/.zprezto/runcoms/zshenv $HOME/.zshenv
 ln -s $HOME/.zprezto/runcoms/zshrc $HOME/.zshrc
 
-#Make Zsh default
-chsh -s zsh
-
 #Backup termux config
 if [ -d "$HOME/.termux"]; then
   mv $HOME/.termux $HOME/.termux.bak
@@ -32,9 +29,8 @@ fi
 git clone https://github.com/badtoyz/termux-prezto "$HOME/.termux"
 #clear
 
-#Install Color and Font
-#cp $HOME/.termux-prezto/colors.properties $HOME/.termux
-#cp $HOME/.termux-prezto/font.ttf $HOME/.termux
+#Make Zsh default
+chsh -s zsh
 
 echo Done
 exit
