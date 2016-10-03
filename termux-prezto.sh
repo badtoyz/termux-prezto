@@ -33,8 +33,8 @@ git clone https://github.com/badtoyz/termux-prezto "$HOME/.termux"
 #clear
 
 #Install Color and Font
-cp $HOME/.termux-prezto/colors.properties $HOME/.termux
-cp $HOME/.termux-prezto/font.ttf $HOME/.termux
+#cp $HOME/.termux-prezto/colors.properties $HOME/.termux
+#cp $HOME/.termux-prezto/font.ttf $HOME/.termux
 
 echo Done
 exit
