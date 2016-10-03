@@ -20,6 +20,9 @@ ln -s $HOME/.zprezto/runcoms/zpreztorc $HOME/.zpreztorc
 ln -s $HOME/.zprezto/runcoms/zshenv $HOME/.zshenv
 ln -s $HOME/.zprezto/runcoms/zshrc $HOME/.zshrc
 
+#Patch some of the rcfiles for use with BusyBox
+echo "alias ls='ls --color=auto'" >> "$HOME/.zshrc" 
+
 #Backup termux config
 if [ -d "$HOME/.termux"]; then
   mv $HOME/.termux $HOME/.termux.bak
