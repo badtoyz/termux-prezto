@@ -1,3 +1,5 @@
+#!/data/date/com.termux/files/bin/bash
+
 # Prezto install for termux
 
 #Termux storage setup
